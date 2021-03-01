@@ -9,6 +9,7 @@ public class PrimeiroTeste {
     	/*Produtos*/
         
     	
+    	
     	Produto produto1 = new Produto();
     	produto1.codigoProduto = 1;
     	produto1.descricaoProduto = "Camisa";
