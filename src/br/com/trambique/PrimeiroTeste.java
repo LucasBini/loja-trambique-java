@@ -7,6 +7,7 @@ public class PrimeiroTeste {
     public static void main(String[] args) {
     	
     	/*Produtos*/
+        
     	
     	Produto produto1 = new Produto();
     	produto1.codigoProduto = 1;
@@ -42,7 +43,7 @@ public class PrimeiroTeste {
     	
     	Pagamento pagamento2 = new Pagamento();
     	pagamento2.codigoPagamento = 2;
-    	pagamento2.descricaoPagamento = "A vista no cart„o de crÈdito  com 5% de desconto";
+    	pagamento2.descricaoPagamento = "A vista no cart√£o de cr√©dito  com 5% de desconto";
     	pagamento2.desconto = 10f;
     	
     	Pagamento pagamento3 = new Pagamento();
@@ -52,19 +53,19 @@ public class PrimeiroTeste {
     	
     	Pagamento pagamento4 = new Pagamento();
     	pagamento4.codigoPagamento = 4;
-    	pagamento4.descricaoPagamento = " Em trÍs vezes com 10% de juros";
+    	pagamento4.descricaoPagamento = " Em tr√™s vezes com 10% de juros";
     	pagamento4.juros = 10f; 	
     
     	
-    	/*como buscar informaÁ„o em outra planilha via scan*/
+    	/*como buscar informa√ß√£o em outra planilha via scan*/
     	    	
     	Scanner scan = new Scanner(System.in);
     	
-    	System.out.println("Digite o cÛdigo do produto:");
+    	System.out.println("Digite o c√≥digo do produto:");
     	
     	int produto = scan.nextInt();
     	
-    	System.out.println("Digite o cÛdigo da forma de pagamento:");
+    	System.out.println("Digite o c√≥digo da forma de pagamento:");
     	
     	int codigoPagamento = scan.nextInt();
     	
@@ -86,9 +87,9 @@ public class PrimeiroTeste {
     	}	else if (produto == 5){
     		venda.produto = produto5;
     	}	else if (produto > 6){
-    		System.out.println("Produto n„o cadastrado");
+    		System.out.println("Produto n√£o cadastrado");
     	} else {
-    		System.out.println("Digitar um cÛdigo v·lido");
+    		System.out.println("Digitar um c√≥digo v√°lido");
     	}
     	
     	
@@ -105,12 +106,12 @@ public class PrimeiroTeste {
         	venda.pagamento = pagamento4;
     		venda.valorFinal = venda.valorFinal + ((venda.produto.valorProduto *10) /100);
     	}	else if (codigoPagamento > 5){
-    		System.out.println("Meio de pagamento n„o cadastrado");
+    		System.out.println("Meio de pagamento n√£o cadastrado");
     	} else {
-    		System.out.println("Digitar um cÛdigo v·lido");
+    		System.out.println("Digitar um c√≥digo v√°lido");
     	}
     	
-    	System.out.println(venda.produto.descricaoProduto + " sendo pago " + venda.pagamento.descricaoPagamento + " custar· " + venda.valorFinal + " reais ");
+    	System.out.println(venda.produto.descricaoProduto + " sendo pago " + venda.pagamento.descricaoPagamento + " custar√° " + venda.valorFinal + " reais ");
 
     	
     	
