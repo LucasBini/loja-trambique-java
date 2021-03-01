@@ -55,6 +55,7 @@ public class PrimeiroTeste {
     	pagamento4.descricaoPagamento = " Em três vezes com 10% de juros";
     	pagamento4.juros = 10f; 	
     
+    	
     	/*como buscar informação em outra planilha via scan*/
     	    	
     	Scanner scan = new Scanner(System.in);
